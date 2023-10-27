@@ -25,7 +25,7 @@ jobs:
   deploy:
     environment:
       name: github-pages
-      url: https://github.com/ThomasBarreto/Proyecto-React
+      url: https://github.com/ThomasBarreto/Proyecto-React/
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
