@@ -12,8 +12,8 @@ export const Card = () => {
 return (
     <>
         <div className="mainProds">
-            {sneakers.map((sneaker) => (
-                <div className="container">
+            {sneakers.map((sneaker, index) => (
+                <div className="container" key={index}>
                     <img className='img' src={sneaker.img} alt="" />
                     <h4 className='titleCard'>{sneaker.nombre}</h4>
                     <p className='price'>{sneaker.precio}</p>
