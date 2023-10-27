@@ -1,5 +1,5 @@
 import React from 'react'
-import {BsWhatsapp} from 'react-icons/Bs'
+import {BsWhatsapp} from 'react-icons/bs'
 import { Nav } from './components/header/Nav'
 import './App.css'
 import { ItemListContainer } from './components/productos/ItemListContainer'
