@@ -1,6 +1,6 @@
 import sneakers from "./ItemListContainer"
 import  "./Card.modules.css"
-import { CiShoppingCart } from "react-icons/Ci"
+import { CiShoppingCart } from "react-icons/ci"
 
 export const Card = () => {
 

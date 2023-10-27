@@ -1,24 +1,8 @@
 
-// import './Nav.modules.css'
-// import { CiShop } from 'react-icons/Ci';
-
-// export const CartWidget = () => {
-//     const cart = () =>{
-//         console.log('Hiciste click en el carrito');
-//     }
-//     return (
-//         <> 
-//             <div className='containerCartWidget' >
-//                 <a onClick={cart} className='cartWidget' href="#"><CiShop/></a>
-//                 <p>1</p>
-//             </div>
-//         </>
-//     )
-// }
 
 import React, { useState } from 'react';
 import './Nav.modules.css';
-import { CiShop } from 'react-icons/Ci';
+import { CiShop } from 'react-icons/ci';
 import sneakers from '../productos/ItemListContainer'
 
 export const CartWidget = () => {
