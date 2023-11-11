@@ -1,26 +1,35 @@
-import sneakers from "./ItemListContainer"
-import  "./Card.modules.css"
-import { CiShoppingCart } from "react-icons/ci"
+import React from 'react';
+import { CiHeart } from 'react-icons/ci';
+import { Link } from 'react-router-dom';
+import { Button } from '../button/Button';
+import './Card.modules.css';
 
-export const Card = () => {
 
+export const Card = ({ products, loading }) => {
+    console.log(products)
     const addToCart = () => {
-        console.log('Hiciste Click en el Carrito');
-    }
+        console.log('Hiciste Click en Favoritos');
+    };
 
-
-return (
-    <>
+    return (
         <div className="mainProds">
-            {sneakers.map((sneaker, index) => (
-                <div className="container" key={index}>
-                    <img className='img' src={sneaker.img} alt="" />
-                    <h4 className='titleCard'>{sneaker.nombre}</h4>
-                    <p className='price'>{sneaker.precio}</p>
-                    <button onClick={addToCart} type='submit' className='cart'><CiShoppingCart/></button>
-                </div>
-            ))}
+            {loading ? (
+                <p>Loading...</p>
+            ) : (
+                products.map((product) => (
+                    <div className="container" key={product.id}>
+                        <img className="img" src={product.img} alt="" />
+                        <h4 className="titleCard">{product.nombre}</h4>
+                        <p className="price">${product.precio}</p>
+                        <button onClick={addToCart} type="submit" className="cart">
+                        <CiHeart />
+                        </button>
+                        <Link to={`/Detalles/${product.id}`}>
+                            <Button text="Detalles" className="details" />
+                        </Link>
+                    </div>
+                ))
+            )}
         </div>
-    </>
-)
-}
+    );
+};

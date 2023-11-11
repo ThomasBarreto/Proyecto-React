@@ -1,11 +1,10 @@
-.itemListContainer{
+.indumentariaListContainer{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
     height: 100vh;
     width: 80%;
-    /* overflow: scroll; */
 }
 
 .prev{

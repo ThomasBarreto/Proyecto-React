@@ -21,28 +21,63 @@
 .list{
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
     width: 80%;
     height: 30%;
     list-style: none;
+    
 }
 
-.list li{
-    width: 100%;
+.link{
+    width: 80%;
     height: 40px;
     border: 1px solid rgb(255, 255, 255);
     border-radius: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
+    text-decoration: none;
     padding: 4px;
 }
 
-.list li a{
+.inicio{
+    cursor: pointer;
     text-decoration: none;
     color: rgb(255, 255, 255);
     width: 100%;
     text-align: center;
     font-weight: bold;
+    background: none;
+    border: none;
 }
+.sneakers{
+    cursor: pointer;
+    background: none;
+    border: none;
+    color: rgb(255, 255, 255);
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+}
+
+.indumentaria{
+    cursor: pointer;
+    background: none;
+    border: none;
+    color: rgb(255, 255, 255);
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+}
+
+.favoritos{
+    cursor: pointer;
+    background: none;
+    border: none;
+    color: rgb(255, 255, 255);
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+}
+
