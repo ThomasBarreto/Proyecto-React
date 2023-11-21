@@ -1,23 +1,12 @@
-import React, { useState } from 'react'
+import React, { useContext, useState } from 'react'
 import './Details.modules.css'
 import { Button } from '../button/Button'
 import { CiShoppingCart } from 'react-icons/ci';
+import { CartContext } from '../../context/CartContext';
 
-export const Details = ({ nombre, precio, talle, img, stock, max = stock }) => {
+export const Details = ({ id, nombre, precio, talle, img, stock, }) => {
 
-    const [count, setCount] = useState(1)
-
-    const increment = () =>{
-        if(count === max){
-            return count
-        } setCount(count + 1)
-    }
-    const decrement = () => {
-        if (count > 1) {
-        setCount(count - 1);
-        }
-    };
-
+    const { handleAddToCart } = useContext(CartContext);
 
     return (
     <div className='containerImgYDetalles'>
@@ -31,20 +20,8 @@ export const Details = ({ nombre, precio, talle, img, stock, max = stock }) => {
             <p>Talle: {talle} </p>
             <p>Stock Disponile: {stock} </p>
         </div>
-        {stock > 0 ? (
-        <div className='btnsContainer'>
-            <button className='decrement' onClick={decrement} aria-label="Decrementar">
-            -
-            </button>
-            <strong>{count}</strong>
-            <button className='increment' onClick={increment} aria-label="Incrementar">
-            +
-            </button>
-        </div>
-        ) : (
-        <p>¡Producto agotado!</p>
-        )}
-        <Button  text={<CiShoppingCart/>} className='botonComprar'/>
+        <Button onClick={() => handleAddToCart({ id, nombre, precio, talle, img, stock,})} text={<CiShoppingCart />} className='botonComprar' />
+
     </div>
     )
 }

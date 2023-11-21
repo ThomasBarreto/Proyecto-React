@@ -32,6 +32,8 @@ export const ItemListContainer = ({ message }) => {
     
         fetchData();
     }, [categoria]);
+
+    
     return (
         <>
         <div className="itemListContainer">

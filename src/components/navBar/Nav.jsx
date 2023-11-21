@@ -8,20 +8,20 @@ export const Nav = () => {
 return (
     <div className='navBar'>
         <div className='containerLogoCart'>
-            <Link to={'/Inicio'}> <img className='logo' src={imagen2} alt="Logo Marca" /> </Link>
+            <Link to={'/inicio'}> <img className='logo' src={imagen2} alt="Logo Marca" /> </Link>
             <CartWidget />
         </div>
         <ul className='list'>
-            <Link className='link' to={'/Inicio'}>
+            <Link className='link' to={'/inicio'}>
                 <button className='inicio'>Inicio</button> 
             </Link>
-            <Link className='link' to={'/Categoria/Sneakers'}>
+            <Link className='link' to={'/categoria/sneakers'}>
                 <button className='sneakers' >Sneakers</button> 
             </Link>
-            <Link className='link' to={'/Categoria/Indumentaria'}>
+            <Link className='link' to={'/categoria/indumentaria'}>
                 <button className='indumentaria' >Indumentaria</button> 
             </Link>
-            <Link className='link' to={'/Favoritos'}>
+            <Link className='link' to={'/favoritos'}>
                 <button className='favoritos' >Favoritos</button> 
             </Link>
         </ul>

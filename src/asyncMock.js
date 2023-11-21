@@ -6,6 +6,7 @@ const productos = [
             categoria:'Sneakers',
             precio:230,
             stock:5,
+            cantidad:1,
         },
         {
             id:2,
@@ -14,6 +15,7 @@ const productos = [
             categoria:'Sneakers',
             precio:310,
             stock:9,
+            cantidad:1,
         },
         {
             id:3,
@@ -22,6 +24,7 @@ const productos = [
             categoria:'Sneakers',
             precio:270,
             stock:10,
+            cantidad:1,
         },
         {
             id:4,
@@ -30,6 +33,7 @@ const productos = [
             categoria:'Sneakers',
             precio:190,
             stock:4,
+            cantidad:1,
         },
         {
             id:5,
@@ -38,6 +42,7 @@ const productos = [
             categoria:'Sneakers',
             precio:140,
             stock:3,
+            cantidad:1,
         },
         {
             id:6,
@@ -46,6 +51,7 @@ const productos = [
             categoria:'Sneakers',
             precio:260,
             stock:6,
+            cantidad:1,
         },
         {
             id:7,
@@ -54,6 +60,7 @@ const productos = [
             categoria:'Sneakers',
             precio:350,
             stock:7,
+            cantidad:1,
         },
         {
             id:8,
@@ -62,6 +69,7 @@ const productos = [
             categoria:'Sneakers',
             precio:300,
             stock:12,
+            cantidad:1,
         },
         {
             id:9,
@@ -70,6 +78,7 @@ const productos = [
             categoria:'Sneakers',
             precio:240,
             stock:7,
+            cantidad:1,
         },
         {
             id:10,
@@ -78,6 +87,7 @@ const productos = [
             categoria:'Sneakers',
             precio:245,
             stock:12,
+            cantidad:1,
         },
         {
             id:11,
@@ -86,6 +96,7 @@ const productos = [
             categoria: 'Indumentaria',
             precio:130,
             stock:9,
+            cantidad:1,
         },
         {
             id:12,
@@ -94,6 +105,7 @@ const productos = [
             categoria:'Indumentaria',
             precio:130,
             stock:9,
+            cantidad:1,
         },
         {
             id:13,
@@ -102,6 +114,7 @@ const productos = [
             categoria:'Indumentaria',
             precio:350,
             stock:10,
+            cantidad:1,
         },
         {
             id:14,
@@ -110,6 +123,7 @@ const productos = [
             categoria:'Indumentaria',
             precio:80,
             stock:4,
+            cantidad:1,
         },
         {
             id:15,
@@ -118,6 +132,7 @@ const productos = [
             categoria:'Indumentaria',
             precio:120,
             stock:3,
+            cantidad:1,
         },
         {
             id:16,
@@ -134,6 +149,7 @@ const productos = [
             categoria:'Indumentaria',
             precio:120,
             stock:7,
+            cantidad:1,
         },
         {
             id:18,
@@ -142,6 +158,7 @@ const productos = [
             categoria:'Indumentaria',
             precio:75,
             stock:12,
+            cantidad:1,
         },
         {
             id:19,
@@ -150,6 +167,7 @@ const productos = [
             categoria:'Indumentaria',
             precio:120,
             stock:7,
+            cantidad:1,
         },
         {
             id:20,
@@ -158,6 +176,7 @@ const productos = [
             categoria:'Indumentaria',
             precio:75,
             stock:12,
+            cantidad:1,
         },
 ]
 

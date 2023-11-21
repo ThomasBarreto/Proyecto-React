@@ -6,7 +6,6 @@ import './Card.modules.css';
 
 
 export const Card = ({ products, loading }) => {
-    console.log(products)
     const addToCart = () => {
         console.log('Hiciste Click en Favoritos');
     };
@@ -24,7 +23,7 @@ export const Card = ({ products, loading }) => {
                         <button onClick={addToCart} type="submit" className="cart">
                         <CiHeart />
                         </button>
-                        <Link to={`/Detalles/${product.id}`}>
+                        <Link to={`/detalles/${product.id}`}>
                             <Button text="Detalles" className="details" />
                         </Link>
                     </div>
