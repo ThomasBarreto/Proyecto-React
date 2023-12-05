@@ -1,0 +1,40 @@
+
+.checkoutContainer{
+    border: 1px dashed rgb(75, 74, 74);
+    width: 80%;
+    display: flex ;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.buttonBrief{
+    width: 100%;
+    padding: 8px;
+    height: 40px;
+    background: none;
+    border: 1px solid #b5b4b4;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.brief{
+    padding: 10px;
+    
+}
+
+.lista{
+    list-style: square;
+}
+
+.listaLi{
+    padding: 6px;
+}
+
+.totalPriceBrief{
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}

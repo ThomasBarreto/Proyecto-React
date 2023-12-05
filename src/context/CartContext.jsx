@@ -1,5 +1,7 @@
 import { useEffect, useState } from "react";
 import { createContext } from "react";
+import { Link} from "react-router-dom";
+import Swal from 'sweetalert2'
 
 
 //createContext
@@ -57,11 +59,26 @@ export const CartContextProvider = ({ children }) => {
     };
 
 
+    const handleClearProd = (product) => {
+        const prodExist = cart.find((prodInCart) => prodInCart.id === product.id);
+        if (prodExist) {
+            setCart(
+                cart.filter((prodInCart) => prodInCart.id !== product.id)
+            );
+        }
+    }
+
+    const finalizarCompra = () => { 
+        setCart([]);
+    }
+
     //objeto provider
     const objetProvider = {
         cart,
         handleAddToCart,
         handleDeleteToCart,
+        finalizarCompra,
+        handleClearProd
     }
     //Return del createContext.provider
     return <CartContext.Provider value={objetProvider} >{children}</CartContext.Provider>

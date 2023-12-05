@@ -1,19 +1,33 @@
 .cartContainer{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
     height: 100vh;
     width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
+.tableContainer{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
+.tableContenido{
+    height: 100vh;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
 h2 {
     text-align: center;
 }
 
 table {
-width: 80%;
+width: 100%;
 border-collapse: collapse;
 margin-top: 20px;
 }
@@ -35,4 +49,22 @@ background: none;
 border: none;
 cursor: pointer;
 font-size: 20px;
+}
+
+.btnFinalizarCompra{
+    background: none;
+    border: 1px solid #cecece;
+    padding: 12px;
+    height:  45px;
+    width: 250px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.checkout{
+    width: 40%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
 }
