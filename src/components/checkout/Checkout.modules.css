@@ -15,8 +15,9 @@
     height: 40px;
     background: none;
     border: 1px solid #b5b4b4;
-    font-weight: bold;
+    font-weight: bolder;
     cursor: pointer;
+
 }
 
 .brief{
@@ -37,4 +38,36 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+.checkoutInput {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.inputContainer{
+    width: 85%;
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    flex-direction: column;
+    height: 200px;
+}
+
+.datos{
+    text-align: center;
+    font-size: 14px;
+    width: 80%;
+    padding: 5px;
+}
+
+.inputDatos{
+    width: 100%;
+    font-weight: bold;
+    border-radius: 2px;
+    background-color: none;
+    border: 1px solid #cecece;
 }

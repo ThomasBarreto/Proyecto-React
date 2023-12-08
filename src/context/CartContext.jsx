@@ -59,7 +59,7 @@ export const CartContextProvider = ({ children }) => {
     };
 
 
-    const handleClearProd = (product) => {
+        const handleClearProd = (product) => {
         const prodExist = cart.find((prodInCart) => prodInCart.id === product.id);
         if (prodExist) {
             setCart(
