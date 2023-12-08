@@ -3,7 +3,7 @@ import Swal from 'sweetalert2';
 import { collection, doc, getDoc, serverTimestamp, updateDoc, addDoc } from 'firebase/firestore';
 import { db } from '../../config/firebaseConfig';
 import { CartContext } from '../../context/CartContext';
-import { Brief } from './brief';
+import { Brief } from './Brief';
 import './Checkout.modules.css';
 import { useState } from 'react';
 
@@ -116,7 +116,7 @@ const Checkout = () => {
                         <Brief cart={cart} total={cart.reduce((total, item) => total + item.cantidad * item.precio, 0)} />
                     </div>
                     <div className='inputContainer'>
-                        <p className='datos'>Ingrese los Datos para Finalizar la Compra</p>
+                        <p className='datos'>Ingrese los datos al finalizar la compra</p>
                         <input
                             className='inputDatos'
                             type="text"

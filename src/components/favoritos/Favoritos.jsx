@@ -5,7 +5,7 @@ export const Favoritos = () => {
         <>
             <div style={{margin: '0 auto'}}>
                 <h1>
-                    Favoritos
+                    En proceso...
                 </h1>
             </div>
         </>

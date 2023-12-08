@@ -3,7 +3,7 @@ import './CartContainer.modules.css'
 import { CartContext } from '../../context/CartContext'
 import { CiTrash } from 'react-icons/ci'
 import { Button } from '../button/Button'
-import Checkout from '../checkout/Checkout'
+import  Checkout  from '../checkout/Checkout'
 
 export const CartContainer = () => {
 
