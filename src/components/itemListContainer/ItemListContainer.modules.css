@@ -5,5 +5,5 @@
     justify-content: space-evenly;
     height: 100vh;
     width: 80%;
-    overflow: scroll;
+    overflow-y: scroll;
 }

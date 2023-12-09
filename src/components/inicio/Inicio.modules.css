@@ -17,6 +17,8 @@
     text-align: center;
     line-height: 30px;
     width: 40%;
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(0, 0, 0, 0.611);
     color: white;
+    border-radius: 5px;
+    padding: 10px;
 }
