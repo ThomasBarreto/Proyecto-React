@@ -30,6 +30,17 @@ export const CartContextProvider = ({ children }) => {
             const updateCart = cart.map((prodInCart) =>
             prodInCart.id === product.id ? { ...prodInCart, cantidad: prodInCart.cantidad + 1 } : prodInCart
         ); setCart(updateCart);
+        Swal.fire({
+            html: `
+            <div style="display: flex; align-items: center; justify-content:center;">
+                <img src="${product.img}" alt="${product.nombre}" style="width: 145px; height: 145px;">
+                <p style="margin-left: 10px;">Agregaste ${product.nombre} al carro 🛒</p>
+            </div>
+        `,
+        position: 'top',
+        showConfirmButton: false,
+        timer: 1500,
+        })
         } else {
             setCart([...cart, { ...product, cantidad: 1 }]);
         }
